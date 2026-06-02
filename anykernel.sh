@@ -4,16 +4,16 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=SouthWest-NG Kernel for Redmi Note 6 Pro (tulip) by armevox
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-device.name4=tuna
+device.name1=tulip
+device.name2=Redmi Note 6 Pro
+device.name3=
+device.name4=
 device.name5=
 supported.versions=
 supported.patchlevels=
@@ -29,7 +29,7 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
+BLOCK=/dev/block/bootdevice/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
